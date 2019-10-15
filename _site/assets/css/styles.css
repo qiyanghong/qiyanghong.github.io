@@ -1,0 +1,118 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px 50px 30px 50px; }
+
+.navlinks {
+  display: flex;
+  width: 800px;
+  justify-content: space-between; }
+
+.navlink {
+  text-decoration: none;
+  font-family: ivymode, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  color: white; }
+
+.navlink:active {
+  opacity: 0.8; }
+
+#current {
+  color: #debe68; }
+
+.front-jumbo {
+  background-image: url("../images/cropped.jpg");
+  background-size: cover;
+  background-position: 0% 60%; }
+
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column; }
+
+.content-container {
+  display: flex;
+  height: 100%;
+  padding: 80px;
+  justify-content: flex-end;
+  align-items: center; }
+
+.sm-icons {
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  align-items: center; }
+  .sm-icons a {
+    margin: 0px 7px;
+    width: 20px;
+    height: 20px;
+    background-size: cover; }
+  .sm-icons a:hover {
+    opacity: 0.5; }
+
+.about-jumbo {
+  background-image: url("../images/about1.jpg"); }
+
+.about-paragraph {
+  width: 600px;
+  margin-left: 10px;
+  line-height: 25px;
+  font-family: mrs-eaves-xl-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: white; }
+
+.footer {
+  background-color: black;
+  padding: 5px;
+  display: flex;
+  justify-content: center; }
+
+.social-media-container {
+  width: 20%;
+  display: flex;
+  justify-content: space-between; }
+
+.link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+h1 {
+  font-family: ivymode, sans-serif;
+  font-size: 75px;
+  font-weight: 200;
+  font-style: normal;
+  color: #debe68; }
+
+h2 {
+  font-family: grafolita-script, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  color: #debe68; }
+
+h4 {
+  font-family: roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  font-style: normal;
+  color: white;
+  text-align: right; }

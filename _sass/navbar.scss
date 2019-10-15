@@ -1,0 +1,33 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px 50px 30px 50px;
+}
+
+.navlinks {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.navlink {
+    text-decoration: none;
+    font-family: ivymode, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+}
+
+.navlink:active {
+  opacity: 0.8;
+}
+
+#current {
+  color: $gold;
+}

@@ -1,0 +1,11 @@
+- name: Home
+  link: /
+
+- name: About
+  link: /about.html
+
+- name: Gallery
+  link: /gallery.html
+
+- name: Awards
+  link: /awards.html

@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-container {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(white, 0.8);
+}

@@ -1,0 +1,7 @@
+<div class="footer">
+  <div class="social-media-container">
+    {% for item in site.data.contact %}
+      <a href="{{ item.link }}" class="link">{{ item.name }}</a>
+    {% endfor %}
+  </div>
+</div>
