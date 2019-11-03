@@ -1,9 +1,11 @@
 .about-jumbo {
-  background-image: url("../images/about1.jpg");
+  background-image: url("../images/playing_far_dark.jpg");
+  background-size: contain;
+  // overflow-y: hidden;
+  height: 100%;
 }
 
 .about-section {
-
 }
 
 .about-paragraph {
