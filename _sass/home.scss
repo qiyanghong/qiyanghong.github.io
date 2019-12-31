@@ -1,7 +1,27 @@
+.title {
+  margin-right: 140px;
+
+  .home-title { @include font(ivymode, 75px, 200, $gold); }
+  .home-blurb { @include font(roboto, 20px, 200, white); text-align: right; }
+}
+
+@media (max-width: 992px) {
+  .home-title {
+    @include font(ivymode, 50px, 200, $gold);
+  }
+
+}
+
+.filler {
+  height: 2000px;
+  background-color: cyan;
+}
+
 .front-jumbo {
   background-image: url("../images/cropped.jpg");
   background-size: cover;
   background-position: 0% 60%;
+  // position: absolute;
 }
 
 .sm-icons {

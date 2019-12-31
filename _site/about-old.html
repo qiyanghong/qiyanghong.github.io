@@ -4,31 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Qiyang Hong</title>
+    <title>About</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/nus5ifj.css">
   </head>
   <body>
-    <div class="jumbotron-fluid front-jumbo">
-  <div class="content-container title-container">
-    <div class="title">
-      <h1 class="home-title">Qiyang Hong</h1>
-      <h4 class="home-blurb">Pianist, Thinker</h4>
-      <div class="sm-icons">
-        <a href="https://www.facebook.com" style="background-image: url('assets/images/facebook.png')"></a>
-        <a href="https://www.instagram.com" style="background-image: url('assets/images/instagram.png')"></a>
-        <a href="mailto: jerryjiao@berkeley.edu" style="background-image: url('assets/images/mail.png')"></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- <div class="navbar">
+    <div class='jumbotron about-jumbo'>
+  <!-- <div class="navbar">
   <div class="navlinks">
     
-      <a href="/" class="navlink" id="current">
+      <a href="/" class="navlink" >
         Home
       </a>
     
@@ -56,7 +43,7 @@
     <ul class="navbar-nav ml-auto text-right">
       
         <li class="nav-item active">
-          <a href="/" class="nav-link" id="active">
+          <a href="/" class="nav-link" >
             Home
             <span class="sr-only">(current)</span>
           </a>
@@ -98,22 +85,43 @@
   </div> -->
 </nav>
 
+  <div class='content-container about-section fade-scroll'>
+    <div class='about-me'>
+      <h2>About Me</h2>
+      <div class='about-paragraph fade-scroll'>
+          Qiyang began playing piano at the age of 5. She has been studying with Xiao Li since 2009 and with Rosa Hong at the VSO School of Music. Her achievements include receiving the Richmond Music Festival Grand Gala Award and Trophy, the Kiwanis Fraser Valley Showcase Pianos Provincial Delegate Award, the BC Performing Arts 2nd place for Junior Canadian Piano, 3rd place in the North West International Piano Ensemble Competition, a Silver Award in the Pacific Rim International Piano Festival, and performing in the Chan Centre and the Richmond Gateway Theatre. Qiyang also received a regional gold medal for RCM Intermediate Piano Pedagogy in 2016. She was also awarded Adjudicator’s Choice for BCRMTA September 2018. Last summer, she has been selected to participate in the Indiana University Piano Academy and University of Florida International Piano Festival where she received an Honourable Mention in the University of Florida International Piano Festival Competition. She received masterclasses from Louis Lortie, Nelson Goerner, Haochen Zhang, Angela Cheng, Edward Auer, Tomislav Baynov, and Gustavo Romero. This year, Qiyang has been accepted with merit scholarships to all the schools she applied to: Indiana University Jacobs School of Music, Eastman School of Music, Oberlin Conservatory of Music, Peabody Institute of Johns Hopkins University, Cincinnati College Conservatory of Music, Schulich School of Music, and UBC School of Music. This upcoming fall, Qiyang will be studying with Professor Emile Naoumoff at the Jacobs School of Music for piano performance.
+      </div>
+      <br/>
+      <br/>
+      <br/>
+    </div>
 
-<div class="filler">
-
-</div>
-<!-- <div class="footer">
-  <div class="social-media-container">
-    
-      <a href="https://facebook.com" class="link">Facebook</a>
-    
-      <a href="https://instagram.com" class="link">Instagram</a>
-    
-      <a href="https://gmail.com" class="link">Email</a>
-    
   </div>
+
 </div>
- -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+  $(function() {
+
+    var documentEl = $(document),
+      fadeElem = $('.fade-scroll');
+
+
+    documentEl.on('scroll', function() {
+      var currScrollPos = documentEl.scrollTop();
+
+      fadeElem.each(function() {
+        var $this = $(this),
+          elemOffsetTop = $this.offset().top;
+        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+      });
+    });
+
+  });
+
+</script>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

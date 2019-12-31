@@ -1,4 +1,4 @@
-<div class="navbar">
+<!-- <div class="navbar">
   <div class="navlinks">
     {% for item in site.data.navigation %}
       <a href="{{ item.link }}" class="navlink" {% if page.url == item.link %}id="current"{% endif %}>
@@ -6,4 +6,34 @@
       </a>
     {% endfor %}
   </div>
-</div>
+</div> -->
+
+<nav id="navbar" class="navbar navbar-expand-md sticky-top navbar-dark">
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-right">
+      {% for item in site.data.navigation %}
+        <li class="nav-item active">
+          <a href="{{ item.link }}" class="nav-link" {% if page.url == item.link %}id="active"{% endif %}>
+            {{ item.name }}
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+  </div> -->
+</nav>

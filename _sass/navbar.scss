@@ -1,33 +1,46 @@
 .navbar {
-  background-color: rgba(255, 255, 255, 0);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  // background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
   width: 100%;
+  // background-color: transparent;\
 
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 30px 50px 30px 50px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: flex-end;
+  // padding: 30px 50px 30px 50px;
+  position: fixed;
 }
 
-.navlinks {
-    display: flex;
-    width: 800px;
-    justify-content: space-between;
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-right: 30px;
+  }
 }
 
-.navlink {
-    text-decoration: none;
-    font-family: ivymode, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 18px;
-    color: white;
+.navbar-collapse {
 }
 
-.navlink:active {
-  opacity: 0.8;
+.navbar-nav {
+  margin-right: 50px;
 }
 
-#current {
+.nav-item {
+  @include font(ivymode, 18px, 200, white);
+  text-decoration: none;
+  color: white;
+  margin: 10px 60px 10px 60px;
+}
+
+.nav-item:hover {
+  opacity: 0.5;
+  color: white;
+}
+
+#active {
   color: $gold;
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: none;
 }

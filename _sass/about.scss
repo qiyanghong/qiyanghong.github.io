@@ -1,21 +1,71 @@
 .about-jumbo {
-  background-image: url("../images/playing_far_dark.jpg");
-  background-size: contain;
+  background-image: url("../images/dark_fixed.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   // overflow-y: hidden;
-  height: 100%;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about-section {
+.about-title {
+  margin: auto auto;
+}
+
+//!!! make media query to make this smaller when the navbar reduces to the button
+.navbar-filler {
+  height: 70px;
+  width: 100%;
+}
+
+h3 {
+  color: white;
+  font-family: ivymode;
+  font-weight: 500;
+
+}
+
+.h3-centered {
+  text-align: center;
 }
 
 .about-paragraph {
-  // border: 1px solid cyan;
-  width: 600px;
-  margin-left: 10px;
-  line-height: 25px;
-  font-family: mrs-eaves-xl-serif, serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 17px;
-  color: white;
+  margin-top: 30px;
 }
+
+.achievements-list {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about-section {
+  margin-top: 50px;
+}
+
+.container {
+  // border: 1px solid white;
+
+}
+
+.col-xl-8 {
+  // border: 1px solid white;
+  padding: 20px;
+}
+
+.col-xl-4 {
+  padding: 20px;
+}
+
+
+
+// .about-me {
+//   border: 1px solid white;
+//   padding: 5px;
+//   width: 30vw;
+//
+//   overflow: scroll;
+// }

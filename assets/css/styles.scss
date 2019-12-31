@@ -1,10 +1,6 @@
 ---
 ---
 $gold: rgba(222, 190, 104, 1);
-@import "navbar";
-@import "home";
-@import "about";
-@import "footer";
 
 @mixin font($family: sans-serif, $size: 15px, $weight: normal, $color: white) {
   font-family: $family, sans-serif;
@@ -14,16 +10,24 @@ $gold: rgba(222, 190, 104, 1);
   color: $color;
 }
 
+@import "navbar";
+@import "home";
+@import "about";
+@import "footer";
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 100%; height: 100%; }
+html, body { width: 100%; background: rgba(29,26,29, 1); }
 
 h1 { @include font(ivymode, 75px, 200, $gold); }
-h2 { @include font(grafolita-script, 40px, 400, $gold); }
+h2 { @include font(grafolita-script, 50px, 400, $gold); }
 h4 { @include font(roboto, 20px, 200, white); text-align: right; }
 
-.jumbotron {
-  width: 100%; height: 100%;
-  overflow-y: scroll;
+p { @include font(mrs-eaves-xl-serif, 17px, 400, white); line-height: 25px;}
+
+.jumbotron-fluid {
+  width: 100%;
+  height: 100vh;
+  // overflow-y: scroll;
   padding-bottom: 50px;
 
   display: flex;
@@ -33,7 +37,29 @@ h4 { @include font(roboto, 20px, 200, white); text-align: right; }
 .content-container {
   display: flex;
   height: 100%;
-  padding: 80px;
   justify-content: flex-end;
   align-items: center;
+}
+
+.footer-spacer {
+  padding: 20px 50px 50px 50px;
+}
+
+.contact {
+  // border: 1px solid white;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin: 0px 7px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+
+  a:hover {
+    opacity: 0.5;
+  }
 }

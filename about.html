@@ -2,42 +2,57 @@
 title: About
 layout: default
 ---
-<div class='jumbotron about-jumbo'>
-  {% include navigation.html %}
-  <div class='content-container about-section fade-scroll'>
-    <div>
-      <h2>About Me</h2>
-      <div class='about-paragraph fade-scroll'>
-          Qiyang began playing piano at the age of 5. She has been studying with Xiao Li since 2009 and with Rosa Hong at the VSO School of Music. Her achievements include receiving the Richmond Music Festival Grand Gala Award and Trophy, the Kiwanis Fraser Valley Showcase Pianos Provincial Delegate Award, the BC Performing Arts 2nd place for Junior Canadian Piano, 3rd place in the North West International Piano Ensemble Competition, a Silver Award in the Pacific Rim International Piano Festival, and performing in the Chan Centre and the Richmond Gateway Theatre. Qiyang also received a regional gold medal for RCM Intermediate Piano Pedagogy in 2016. She was also awarded Adjudicator’s Choice for BCRMTA September 2018. Last summer, she has been selected to participate in the Indiana University Piano Academy and University of Florida International Piano Festival where she received an Honourable Mention in the University of Florida International Piano Festival Competition. She received masterclasses from Louis Lortie, Nelson Goerner, Haochen Zhang, Angela Cheng, Edward Auer, Tomislav Baynov, and Gustavo Romero. This year, Qiyang has been accepted with merit scholarships to all the schools she applied to: Indiana University Jacobs School of Music, Eastman School of Music, Oberlin Conservatory of Music, Peabody Institute of Johns Hopkins University, Cincinnati College Conservatory of Music, Schulich School of Music, and UBC School of Music. This upcoming fall, Qiyang will be studying with Professor Emile Naoumoff at the Jacobs School of Music for piano performance.
-      </div>
-      <br/>
-      <br/>
-      <br/>
-    </div>
-
+<div class="about-jumbo">
+  <div class="navbar-filler">
   </div>
-
+  <h2 class="about-title">About Me</h2>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script type="text/javascript">
+{% include navigation.html %}
 
-  $(function() {
+<div class="container about-section" id="hi">
+  <div class="row">
+    <div class="col-xl-8">
+      <h3>Bio</h3>
+      <p class='about-paragraph'>
+        Qiyang began playing piano at the age of 5. She has been studying with Xiao Li since 2009 and with Rosa Hong at the VSO School of Music. Her achievements include receiving the Richmond Music Festival Grand Gala Award and Trophy, the Kiwanis Fraser Valley Showcase Pianos Provincial Delegate Award, the BC Performing Arts 2nd place for Junior Canadian Piano, 3rd place in the North West International Piano Ensemble Competition, a Silver Award in the Pacific Rim International Piano Festival, and performing in the Chan Centre and the Richmond Gateway Theatre. Qiyang also received a regional gold medal for RCM Intermediate Piano Pedagogy in 2016. She was also awarded Adjudicator’s Choice for BCRMTA September 2018. Last summer, she has been selected to participate in the Indiana University Piano Academy and University of Florida International Piano Festival where she received an Honourable Mention in the University of Florida International Piano Festival Competition. She received masterclasses from Louis Lortie, Nelson Goerner, Haochen Zhang, Angela Cheng, Edward Auer, Tomislav Baynov, and Gustavo Romero. This year, Qiyang has been accepted with merit scholarships to all the schools she applied to: Indiana University Jacobs School of Music, Eastman School of Music, Oberlin Conservatory of Music, Peabody Institute of Johns Hopkins University, Cincinnati College Conservatory of Music, Schulich School of Music, and UBC School of Music. This upcoming fall, Qiyang will be studying with Professor Emile Naoumoff at the Jacobs School of Music for piano performance.
+      </p>
+    </div>
+    <div class="col-xl-4">
+      <h3 class="h3-centered">Achievements</h3>
+      <p class='achievements-list'>
+        Richmond Music Festival Grand Gala Award and Trophy <br><br>
+        Kiwanis Fraser Valley Showcase <br><br>
+        BC Performing Arts <br><br>
+        North West International Piano Ensemble <br><br>
+        Pacific Rim Third Place <br><br>
+        Regional Gold Medal for RCM Intermediate Piano Pedagogy <br><br>
+      </p>
+    </div>
+  </div>
+  <div class="footer-spacer">
+    <div class="contact">
+      <a href="https://www.facebook.com" style="background-image: url('assets/images/facebook.png')"></a>
+      <a href="https://www.instagram.com" style="background-image: url('assets/images/instagram.png')"></a>
+      <a href="mailto: jerryjiao@berkeley.edu" style="background-image: url('assets/images/mail.png')"></a>
+    </div>
+  </div>
+</div>
 
-    var documentEl = $(document),
-      fadeElem = $('.fade-scroll');
 
+<!-- <nav class="navbar navbar-expand-md navbar-light  ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    documentEl.on('scroll', function() {
-      var currScrollPos = documentEl.scrollTop();
-
-      fadeElem.each(function() {
-        var $this = $(this),
-          elemOffsetTop = $this.offset().top;
-        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
-      });
-    });
-
-  });
-
-</script>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
