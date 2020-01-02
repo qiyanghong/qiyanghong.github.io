@@ -135,9 +135,9 @@ h3 {
   width: 100%;
   height: auto; }
 
-.row {
-  display: flex;
-  flex-wrap: wrap; }
+iframe {
+  width: 35vw;
+  height: 20vw; }
 
 .col-md-6 {
   display: flex;
